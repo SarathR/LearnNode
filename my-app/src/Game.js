@@ -1,8 +1,9 @@
 import React from 'react';
 import Board from './Board';
+import './index.css';
 import calculateWinner from './util.js';  
 
-export default class Game extends React.Component {
+class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -66,3 +67,4 @@ export default class Game extends React.Component {
     );
   }
 }
+export default Game;
